@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <title>Полищук Александр - фрилансер, веб-разработчик.</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <!-- Блок меню -->
         <div class="header__top">
         <a href="#" class="header__logo"></a>
-        <ul class="social-links">
+        <ul class="social-links wow bounce" data-wow-delay="0.3s">
             <li class="social-links__item">
                 <a href="https://github.com/polischukweb" class="social-links__link">
                     <img src="img/social/github.svg" alt="GitHub" class="social-links__img">
@@ -47,12 +48,12 @@
         <!-- О фрилансере -->
         <div class="header__content">
             <div class="header__content-text">
-                <span class="header__content-subtitle">Фрилансер</span>
-                <h1 class="header__content-title">Полищук Александр</h1>
-                <p class="header__content-description">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина.</p>
-                <button class="button header__content-button">Бесплатная консультация</button>
+                <span class="header__content-subtitle wow fadeInRight" data-wow-delay="0.2s">Фрилансер</span>
+                <h1 class="header__content-title wow fadeInRight" data-wow-delay="0.4s">Полищук Александр</h1>
+                <p class="header__content-description wow fadeInRight" data-wow-delay="0.6s">Разрабатываю сайты для малого и среднего бизнеса. У меня можно заказать дизайн и верстку небольшого сайта или интернет-магазина.</p>
+                <button class="button header__content-button wow fadeInRight" data-wow-delay="0.8s">Бесплатная консультация</button>
             </div>
-            <div class="header__content-avatar">
+            <div class="header__content-avatar wow fadeIn" data-wow-delay="1.5s">
 
             </div>
         </div>
@@ -62,5 +63,96 @@
     <!-- /Контейнер -->
 
     </header>
+    <main>
+    <section class="features section">
+        <div class="conteiner">
+            <h2 class="section-title wow fadeInRight" data-wow-delay="0.6s">Со мной удобно работать</h2>
+            <div class="features__block">
+                <div class="features__block-item wow rotateInDownLeft" data-wow-delay="0.6s">
+                    <img src="img/features/offer-img.svg" alt="По договору" class="features__block-item-img">
+                    <h2 class="features__block-item-title">По договору</h2>
+                    <p class="features__block-item-text">Предоставлю все документы для бухгалтерии: договоры, счета и акты. Работаю как ИП без НДС.</p>
+                </div>
+                <div class="features__block-item wow flipInX" data-wow-delay="0.6s">
+                    <img src="img/features/deadline-img.svg" alt="Точно в срок" class="features__block-item-img">
+                    <h2 class="features__block-item-title">Точно в срок</h2>
+                    <p class="features__block-item-text">В договоре прописана моя  ответственность за срок проекта. Если просрочу — плачу неустойку.</p>
+                </div>
+                <div class="features__block-item wow rotateInDownRight" data-wow-delay="0.6s">
+                    <img src="img/features/agreement-img.svg" alt="Ценник под вас" class="features__block-item-img">
+                    <h2 class="features__block-item-title">Ценник под вас</h2>
+                    <p class="features__block-item-text">Если у вас нетиповой проект, сделаю рассчет цены за работу и объясню, как складывается цена.</p>
+                </div>
+                <div class="features__block-item wow rotateInDownLeft" data-wow-delay="0.6s">
+                    <img src="img/features/steps-img.svg" alt="Премежуточные итоги" class="features__block-item-img">
+                    <h2 class="features__block-item-title">Премежуточные итоги</h2>
+                    <p class="features__block-item-text">Показываю работу поэтапно, а не в последий момент перед крайним сроком. </p>
+                </div>
+                <div class="features__block-item wow flipInX" data-wow-delay="0.6s">
+                    <img src="img/features/storage-img.svg" alt="Хостинг и домен" class="features__block-item-img">
+                    <h2 class="features__block-item-title">Хостинг и домен </h2>
+                    <p class="features__block-item-text">Если мы договорились о цене проекта, в неё входит всё: домен и хостинг на год + SSL сертификат.</p>
+                </div>
+                <div class="features__block-item wow rotateInDownRight" data-wow-delay="0.6s">
+                    <img src="img/features/conversation-img.svg" alt="Не брошу после сдачи" class="features__block-item-img">
+                    <h2 class="features__block-item-title">Не брошу после сдачи</h2>
+                    <p class="features__block-item-text">Научу вас или вашего сотрудника пользоваться сайтом, запишу видео-инструкции.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="footer section"> 
+        <div class="conteiner">
+            <h2 class="section__title wow fadeIn" data-wow-delay="0.7s">Свяжитесь со мной</h2>
+            <div class="contacts">
+                <form action="#" class="contacts__form wow fadeInLeft" data-wow-delay="0.6s">
+                    <h4 class="contacts__title">Можете просто оставить заявку, я позвоню вам сегодня</h4>
+                    <input type="text" class="contacts__form-input input-name" placeholder="Ваше имя">
+                    <input type="text" class="contacts__form-input input-phone" placeholder="Ваш телефон">
+                    <button class="button contacts__button">Бесплатная консультация</button>
+                </form>
+                <div class="contacts__text wow fadeInRight" data-wow-delay="0.6s">
+                    <div class="contacts__text-data">
+                        <div class="contacts__text-data-phone"><h4 class="contacts__text-title">Телефон</h4><a href="tel:+380634164000" class="contacts__text-data-phone-number contacts__text-link">+380 63 416 4000</a></div>
+                        <div class="contacts__text-data-mail"><h4 class="contacts__text-title">Почта</h4><a href="mailto:polischuk.web@gmail.com" class="contacts__text-link">polischuk.web@gmail.com</a></div>
+                        <div class="contacts__text-data-social">
+                            <h4 class="contacts__text-title">Соцсети</h4>
+                            <a href="t.me/pqlishuk" class="contacts__text-link">Telegram</a>
+                            <a href="https://www.facebook.com/aleksandr.polischuk.5" class="contacts__text-link">Facebook</a>
+                            </div>
+                    </div>
+                    <ul class="social-links">
+                        <li class="social-links__item">
+                            <a href="https://github.com/polischukweb" class="social-links__link">
+                                <img src="img/social/github.svg" alt="GitHub" class="social-links__img">
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href href="#" class="social-links__link">
+                                <img src="img/social/twitter.svg" alt="Twitter" class="social-links__img">
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="https://www.instagram.com/pqlishuk/" class="social-links__link">
+                                <img src="img/social/instagram.svg" alt="Instagram" class="social-links__img">
+                            </a>
+                        </li>
+                        <li class="social-links__item">
+                            <a href="https://www.facebook.com/aleksandr.polischuk.5" class="social-links__link">
+                                <img src="img/social/facebook.svg" alt="FaceBook" class="social-links__img">
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="contacts__policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
