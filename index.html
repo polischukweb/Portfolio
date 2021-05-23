@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <title>Полищук Александр - фрилансер, веб-разработчик.</title>
 </head>
@@ -105,10 +106,14 @@
     <section class="section projects">
         <div class="conteiner">
             <h2 class="section-title">Последние проекты</h2>
-            <div class="projjects__slider">
 
-                <div class="projects__slide">
-                <img src="img/project-img.png" alt="Slide" class="projects__slide-img">
+            <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-slide">
+            <!-- Slides -->
+                <div class="swiper-slide projects__slide">
+                    <img src="img/project-img.png" alt="Slide" class="projects__slide-img">
                 <div class="projjects__slide-content">
                     <h4 class="projjects__slide-title">Сайт строительной фирмы “Велстрой”</h4>
                     <div class="projjects__slide-time"><img src="img/time-icon.png" alt="" class="projjects__slide-time-img"> 
@@ -133,8 +138,15 @@
                     </div>
                 </div>
                 </div>
-                
-            </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+    <!-- If we need pagination -->
+    <div class="projects-pagination"></div>
+    
+    </div>
+            
         </div>
     </section>
     </main>
@@ -186,7 +198,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
