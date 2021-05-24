@@ -397,4 +397,7 @@ body{
     .contacts__text-data-phone-number{
         margin-right: 0;
     }
+    .features__block-item{
+        margin-bottom: 35px;
+    }
 }
